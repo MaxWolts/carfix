@@ -1,0 +1,34 @@
+.menuMobile {
+    position: relative;
+    display: flex;
+}
+.menuMobile button {
+    background: none;
+    border: none;
+}
+.menuMobile svg {
+    width: 30px;
+    height: 30px;
+    color: #161616;
+}
+.menuMobileNav {
+    position: absolute;
+    top: 3rem;
+    right: 0;
+    padding: 8px 16px;
+    border-radius: 5px;
+    background: #f9f9f9;
+}
+.menuMobileNav ul {
+    width: max-content;
+    list-style: none;
+}
+.menuMobileNav ul li a{
+    display: block;
+    padding: 8px 0;
+}
+@media (min-width:720px) {
+    .menuMobile {
+        display: none;
+    }
+}

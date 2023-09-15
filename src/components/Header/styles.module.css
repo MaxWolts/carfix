@@ -1,0 +1,60 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 1rem;
+    height: 72px;
+    background: #f9f9f9;
+}
+.headerLeftPart {
+    display: none;
+    align-items: center;
+    gap: 16px;
+}
+.headerNav {
+    display: flex;
+    align-items: center;
+}
+.headerNav ul{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+.buttonLogin {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 8px 24px;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #DE3434;
+    cursor: pointer;
+    transition: border-color 0.25s;
+  }
+.buttonLogin:hover {
+border-color: #161616;
+background-color: #da4141;
+}
+.buttonLogin:focus,
+.buttonLogin:focus-visible {
+outline: 4px auto -webkit-focus-ring-color;
+}
+.buttonIcon {
+    padding: 8px;
+    background: none;
+    border: none;
+}
+.buttonIcon svg {
+    color: black;
+    width: 30px;
+    height: 30px;
+}
+
+@media (min-width:720px) {
+    .headerLeftPart {
+        display: flex;
+    }
+    .header {
+        padding: 16px 3rem;
+    }
+}
