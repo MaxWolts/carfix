@@ -1,0 +1,48 @@
+.carouselContainer {
+    max-width: 1200px; /* Ancho máximo para mostrar tres imágenes a la vez */
+    overflow: hidden;
+    position: relative;
+    margin: 1rem;
+}
+
+.carousel {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Cinco columnas para cinco imágenes */
+    gap: 1rem;
+    transition: transform 0.5s ease; /* Animación de desplazamiento */
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
+.carouselBtn {
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+}
+.carouselBtn svg {
+    color: #161616;
+    width: 18px;
+    height: 18px;
+}
+
+.prevBtn {
+    left: 0;
+}
+
+.nextBtn {
+    right: 0;
+}
+.carouselBtn:disabled {
+    opacity: .4;
+    border: 1px solid #161616;
+}
