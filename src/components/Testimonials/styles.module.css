@@ -1,0 +1,24 @@
+.testimonials {
+    display: grid;
+    justify-content: center;
+    padding: 0 6.94vw;
+    gap: 1rem;
+}
+.titleSection {
+    color: #FFB23F;
+    font-weight: bold;
+    font-size: 1.125rem;
+}
+.logoContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+.logoContainer img {
+    height: fit-content;
+}
+.bigText {
+    font-size: 2.75rem;
+    font-weight: bold;
+}
