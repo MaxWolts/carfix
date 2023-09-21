@@ -37,11 +37,9 @@ const Carousel = () => {
   const isVisibleLastElement = () => {
     const carouselWith = obtainCarouselWidth()
     const itemWidth = obtainItemWidth()
-    const posibleMoves = Math.round(itemWidth*5 / carouselWith) +1
+    const possibleMoves = Math.round(itemWidth*5 / carouselWith) +1
     const actualMove = currentIndex / itemWidth
-    console.log(posibleMoves, actualMove)
-    if (-posibleMoves < actualMove && -actualMove < 4) {
-      
+    if (-possibleMoves < actualMove && -actualMove < 4) {
       return 1
     }
     return 0
@@ -51,21 +49,24 @@ const Carousel = () => {
 
   return (
     <div className={styles.carouselContainer}>
-        <h2>Nuestros Servicios</h2>
-        <button className={styles.carouselBtn + ' ' + styles.prevBtn} onClick={prevSlide} disabled={currentIndex < 0? false: true}>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={4} stroke="currentColor" className="w-6 h-6">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-          </svg>
-        </button>
-        <div ref={refCarousel} style={{ transform: `translateX(${translateXValue})` }} className={styles.carousel}>
-          {ItemData.map((item,index) => <ItemCarousel img={item.img} description={item.description} title={item.title} key={index}/>)}
-        </div>
-        <button className={styles.carouselBtn + ' ' + styles.nextBtn} onClick={nextSlide}>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={4} stroke="currentColor" className="w-6 h-6">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-          </svg>
+      <div className={styles.textContainer}>
+        <h1>Nuestros Servicios</h1>
+        <p>Descubra nuestros servicios de alta calidad que mantienen su vehículo en óptimas condiciones y en el camino sin problemas.</p>
+      </div>
+      <button className={styles.carouselBtn + ' ' + styles.prevBtn} onClick={prevSlide} disabled={currentIndex < 0? false: true}>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={4} stroke="currentColor" className="w-6 h-6">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+        </svg>
+      </button>
+      <div ref={refCarousel} style={{ transform: `translateX(${translateXValue})` }} className={styles.carousel}>
+        {ItemData.map((item,index) => <ItemCarousel img={item.img} description={item.description} title={item.title} key={index}/>)}
+      </div>
+      <button className={styles.carouselBtn + ' ' + styles.nextBtn} onClick={nextSlide} disabled={isVisibleLastElement() || currentIndex==0 ? false: true}>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={4} stroke="currentColor" className="w-6 h-6">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+        </svg>
 
-        </button>
+      </button>
     </div>
   )
 }

@@ -2,4 +2,16 @@
     width: 100vw;
     max-width: 394px;
     min-width: 300px;
+    /* gap: 1.5rem; */
+    display: flex;
+    flex-direction: column;
+
+}
+.textContainer {
+    display: grid;
+    margin: 1.5rem 0;
+    color: #615d6f;
+}
+.textContainer h3 {
+    padding: 1.5rem 0;
 }

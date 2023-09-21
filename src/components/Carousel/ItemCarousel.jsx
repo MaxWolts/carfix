@@ -4,8 +4,10 @@ const ItemCarousel = ({ img, title, description }) => {
   return (
     <div className={styles.item}>
         <img src={img} alt="item image"/>
-        <h3>{title}</h3>
-        <p>{description}</p>
+        <div className={styles.textContainer}>
+          <h3>{title}</h3>
+          <p>{description}</p>
+        </div>
     </div>
   )
 }

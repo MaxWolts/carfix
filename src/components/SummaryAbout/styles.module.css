@@ -1,12 +1,12 @@
 .aboutSummary {
-    display: grid;
-    gap: 1.25rem;
-    grid-template-columns: repeat(auto-fill,  minmax(100px, 598px));
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    margin-top: 6.94vw;
     padding: 0 6.94vw 2rem;
 }
 .aboutSummary img {
     width: 100%;
-    max-width: 610px;
 }
 .aboutTitleSection {
     color: #FFB23F;
@@ -33,8 +33,12 @@
 .ourNumbers div{
     display: grid;
 }
+.ourNumbersTime{
+    color: #615d6f;
+}
 .leftColumn, .rightColumn {
-    max-width: 610px;
+    width: 100%;
+    max-width: 580px;
 }
 .leftColumn {
     display: grid;

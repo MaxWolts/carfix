@@ -5,23 +5,32 @@
 .banner {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
     width: 100%;
-    max-width: 1280px;
+    /* max-width: 1280px; */
     height: 620px;
-    padding: 2rem;
-    letter-spacing: 0.6px;
+    padding: 6.94vw;
+    color: #f9f9f9;
+    /* letter-spacing: 0.6px; */
     background-image: url('../../assets/top-view-man-repairing-car1.jpg');
     background-position: center;
+}
+.textContainer {
+    max-width: 40rem;
 }
 .banner h1 {
     font-size: 2.75rem;
 }
 .banner p {
     font-size: 1.125rem;
+    color: #AFADB5;
+}
+.titleSection {
+    color: #FFB23F;
+    font-weight: bold;
+    font-size: 1.125rem;
 }
 @media (min-width:720px) {
     .banner {
-        padding: 5.75rem;
+        padding: 6.94vw;
     }
 }

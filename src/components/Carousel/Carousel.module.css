@@ -1,10 +1,19 @@
 .carouselContainer {
-    max-width: 1200px; /* Ancho máximo para mostrar tres imágenes a la vez */
     overflow: hidden;
     position: relative;
-    margin: 1rem;
+    max-width: 1440px;
+    margin: 1rem 6.94vw 1rem;
 }
-
+.textContainer {
+    display: grid;
+    gap: 1.875rem;
+    margin: 3.5rem auto;
+    max-width: 35rem;
+    text-align: center;
+}
+.textContainer p {
+    color: #615d6f;
+}
 .carousel {
     display: grid;
     grid-template-columns: repeat(5, 1fr); /* Cinco columnas para cinco imágenes */
@@ -23,7 +32,7 @@
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
-    padding: 10px;
+    padding: 1rem;
     background-color: #f9f9f9;
     border: none;
     border-radius: 50%;
@@ -45,4 +54,9 @@
 .carouselBtn:disabled {
     opacity: .4;
     border: 1px solid #161616;
+}
+@media (min-width:720px) {
+    .carouselContainer {
+        margin: 1rem 2vw 1rem 6.94vw;
+    }
 }
