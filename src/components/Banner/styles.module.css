@@ -6,13 +6,13 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    /* max-width: 1280px; */
-    height: 620px;
+    height: 730px;
     padding: 6.94vw;
     color: #f9f9f9;
-    /* letter-spacing: 0.6px; */
     background-image: url('../../assets/top-view-man-repairing-car1.jpg');
     background-position: center;
+    
+    background-size: cover;
 }
 .textContainer {
     max-width: 40rem;
@@ -31,6 +31,7 @@
 }
 @media (min-width:720px) {
     .banner {
+        height: 620px;
         padding: 6.94vw;
     }
 }

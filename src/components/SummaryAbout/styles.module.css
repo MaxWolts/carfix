@@ -1,6 +1,6 @@
 .aboutSummary {
     display: flex;
-    flex-wrap: nowrap;
+    flex-flow: wrap;
     gap: 1rem;
     margin-top: 6.94vw;
     padding: 0 6.94vw 2rem;
@@ -34,6 +34,7 @@
     display: grid;
 }
 .ourNumbersTime{
+    width: min-content;
     color: #615d6f;
 }
 .leftColumn, .rightColumn {

@@ -14,16 +14,16 @@ const Header = () => {
             <nav className={styles.headerNav}>
                 <ul>
                     <li>
-                        <a href="">Product</a>
+                        <a href="/">Home</a>
                     </li>
                     <li>
-                        <a href="">Services</a>
+                        <a href="#">Servicios</a>
                     </li>
                     <li>
-                        <a href="">Contact</a>
+                        <a href="#">Contactanos</a>
                     </li>
                     <li>
-                        <a href="">About Us</a>
+                        <a href="#">Login</a>
                     </li>
                 </ul>
             </nav>
