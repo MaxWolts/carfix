@@ -1,0 +1,55 @@
+.aboutSummary {
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: repeat(auto-fill,  minmax(100px, 598px));
+    padding: 0 6.94vw 2rem;
+}
+.aboutSummary img {
+    width: 100%;
+    max-width: 610px;
+}
+.aboutTitleSection {
+    color: #FFB23F;
+    font-weight: bold;
+    font-size: 1.125rem;
+}
+.textContainer {
+    display: flex;
+    flex-direction: column;
+}
+.textContainer h1 {
+    margin-bottom: 2.5rem;
+}
+.bigText {
+    font-size: 2.75rem;
+    font-weight: bold;
+}
+.ourNumbers {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 3.188rem;
+    row-gap: 1rem;
+}
+.ourNumbers div{
+    display: grid;
+}
+.leftColumn, .rightColumn {
+    max-width: 610px;
+}
+.leftColumn {
+    display: grid;
+    align-content: space-between;
+}
+.leftColumn img {
+    margin-top: 2rem;
+}
+.rightColumn {
+    display: grid;
+    gap: 3.563rem;
+}
+
+@media (min-width:720px) {
+    .ourNumbers {
+        justify-content: flex-end;
+    }
+}
