@@ -16,7 +16,7 @@ const MenuMobile = () => {
         <nav className={style.menuMobileNav}>
           <ul>
             <li>
-              <a href="/">Home</a>
+              <a href="#">Home</a>
             </li>
             <li>
               <a href="#">Servicios</a>
